@@ -1,0 +1,12 @@
+Algoritmo TALLER_DOS_PUNTO_DOS
+	
+	Definir edad Como entero;
+	
+	Escribir "Cuál es su edad? ";
+	leer edad;
+	Si edad < 18 = Verdadero Entonces
+		Escribir "Usted aún es un niño(a).";
+	FinSi
+	
+	
+FinAlgoritmo

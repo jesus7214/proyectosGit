@@ -1,0 +1,107 @@
+Algoritmo TALLER_DOS_PUNTO_DIEZ
+	
+	Definir titularA Como Entero;
+	Definir titularB Como Entero;
+	Definir cantidad Como Entero;
+	Definir consignar Como Entero;
+	Definir retiro Como Entero;
+	Definir opc_Cuenta Como Caracter;
+	Definir opc_Usuario Como Entero;
+	
+	titularA <- 1234;
+	titularB <- 5678;
+	
+	Escribir "Ingrese su numero de usuario";
+	leer opc_Usuario;
+	
+	Si(opc_Usuario == 1234)=Verdadero Entonces
+		Escribir "Ingreso correcto Tiular A"
+		
+		Escribir "Digite la opcion requerida: consignar //  retiro // cantidad ";
+		leer opc_Cuenta;
+		
+		si(opc_Cuenta == "consignar")=Verdadero Entonces
+			Escribir "Vas a consignar"
+			
+			Escribir "Digite la cantidad a consignar:"
+			leer consignar;
+			
+			cantidad <- consignar - retiro;
+		FinSi
+		
+		
+		Escribir "Digite la opcion requerida: consignar //  retiro // cantidad ";
+		leer opc_Cuenta;
+		
+		si(opc_Cuenta == "retiro")=Verdadero Entonces
+			Escribir "Vas a Retirar"
+			
+			Escribir "Digite la cantidad a Retirar:"
+			leer retiro;
+			
+			cantidad <- consignar - retiro;
+		FinSi
+		
+		
+		Escribir "Digite la opcion requerida: consignar //  retiro // cantidad ";
+		leer opc_Cuenta;
+		
+		si(opc_Cuenta == "cantidad")=Verdadero Entonces
+			Escribir "Vas a revisar la Cantidad en la cuenta"
+			cantidad <- consignar - retiro;
+			
+			Escribir "La Cantidad en la cuenta es: ", cantidad;
+		FinSi
+		
+	SiNo
+		Escribir "Número incorrecto de usuario, intente de nuevo"
+	FinSi
+	
+	
+	
+	
+	Si(opc_Usuario == 5678)=Verdadero Entonces
+		Escribir "Ingreso correcto Tiular B"
+		
+		Escribir "Digite la opcion requerida: consignar //  retiro // cantidad ";
+		leer opc_Cuenta;
+		
+		si(opc_Cuenta == "consignar")=Verdadero Entonces
+			Escribir "Vas a consignar"
+			
+			Escribir "Digite la cantidad a consignar:"
+			leer consignar;
+			
+			cantidad <- consignar - retiro;
+		FinSi
+		
+		
+		Escribir "Digite la opcion requerida: consignar //  retiro // cantidad ";
+		leer opc_Cuenta;
+		
+		si(opc_Cuenta == "retiro")=Verdadero Entonces
+			Escribir "Vas a Retirar"
+			
+			Escribir "Digite la cantidad a Retirar:"
+			leer retiro;
+			
+			cantidad <- consignar - retiro;
+		FinSi
+		
+		
+		Escribir "Digite la opcion requerida: consignar //  retiro // cantidad ";
+		leer opc_Cuenta;
+		
+		si(opc_Cuenta == "cantidad")=Verdadero Entonces
+			Escribir "Vas a revisar la Cantidad en la cuenta"
+			cantidad <- consignar - retiro;
+			
+			Escribir "La Cantidad en la cuenta es: ", cantidad;
+		FinSi
+		
+	SiNo
+		Escribir "Número incorrecto de usuario, intente de nuevo"
+	FinSi
+	
+	
+FinAlgoritmo

@@ -1,0 +1,95 @@
+Algoritmo TALLER_DOS_PUNTO_CINCO
+	
+	Definir identificacionClie Como Caracter;
+	Definir OpcionCompra Como Caracter;
+	Definir OpcionPago Como entero;
+	Definir ptoNuev Como Caracter;
+	Definir ptoAseo Como Caracter;
+	Definir ptoFru Como Caracter;
+	Definir ptoLac Como Caracter;
+	Definir ptoCar Como Caracter;
+	
+	Escribir "por favor, escriba su identificación";
+	leer identificacionClie;
+	
+	Escribir "Compra de electrodomesticos digite: electro, Compra de Aseo digite: aseo: 2, Compra de Alimentos digite: alimento";
+	leer OpcionCompra;
+	
+	si(OpcionCompra == "electro")= Verdadero Entonces
+		Escribir "Comprarás electrodomesticos";
+		
+		Escribir "ingresa: nuevo si quieres productos nuevos, de lo contrario verás usados";
+		leer ptoNuev;
+		si(ptoNuev =="nuevo")=Verdadero Entonces
+			Escribir "Realizarás compras unicamente de articulos Nuevos";
+			
+			Escribir "para precios entre 0 y 300000 digita: bajo, para precios entre 301000 y 1000000 digita: medio, para precios entre 1000001 y 5000000 digita: alto";
+			leer precioNuev;
+			si(precioNuev == "bajo")=Verdadero Entonces
+				Escribir "Los productos a precios bajos son: Licuadoras, Planchas y Batidoras";
+			FinSi
+			
+			si(precioNuev == "medio")=Verdadero Entonces
+				Escribir "Los productos a precios medios son: Microondas, Planchas, Estufas, Arroceras y Aspiradoras"
+			FinSi
+			
+			si(precioNuev == "alto")=Verdadero Entonces
+				Escribir "Los productos a precios Altaos son: Neveras, Televisores y Lavadoras"
+			FinSi
+
+		SiNo
+			Escribir "Realizarás compras unicamente de articulos Usados";
+		FinSi
+		
+	FinSi
+	
+	SI (OpcionCompra == "aseo")= Verdadero Entonces
+		Escribir "Comprarás productos de aseo";
+		
+		Escribir "Ingresa: cocina para productos de aseo de cocina, o habitacion productos de aseo de habiatacion";
+		leer ptoAseo;
+		si(ptoAseo == "cocina")=Verdadero Entonces
+			Escribir "Realizarás compras unicamente de articulos de Aseo para Cocina";
+		FinSi
+		
+		si(ptoAseo == "habitacion")=Verdadero Entonces
+			Escribir "Realizarás compras unicamente de articulos de Aseo para Habitación";
+		FinSi
+		
+	FinSi
+	
+	
+	SI (OpcionCompra ==  "alimento")= Verdadero Entonces
+		Escribir "Comprarás alimentos";
+		
+		Escribir "Ingresa: fruta para comprar frutas, lacteo para bebidas lacteas y carne para compra de carnes";
+		leer ptoFru;
+		si(ptoFru == "fruta")=Verdadero Entonces
+			Escribir "Realizarás compras unicamente de Frutas";
+		FinSi
+		
+		si(ptoLac == "lacteo")=Verdadero Entonces
+			Escribir "Realizarás compras unicamente de Lacteos";
+		FinSi
+		
+		si(ptoCar == "lacteo")=Verdadero Entonces
+			Escribir "Realizarás compras unicamente de Cárnicos";
+		FinSi
+	FinSi
+	
+	Escribir "´Para pago por PSE eliga: 1, Para pago en TIENDDA eliga: 2, Pago con PUNTOS elija: 3";
+	leer OpcionPago;
+	
+	si(OpcionPago == 1)= Verdadero Entonces
+		Escribir "Pagarás mediante PSE";
+	FinSi
+	
+	SI (OpcionPago == 2)= Verdadero Entonces
+		Escribir "Pagarás en la TIENDA";
+	FinSi
+	
+	SI (OpcionPago == 3)= Verdadero Entonces
+		Escribir "Pagarás con PUNTOS";
+	FinSi
+	
+FinAlgoritmo
