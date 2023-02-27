@@ -1,0 +1,30 @@
+Algoritmo TALLER_CINCO_PUNTO_DTRES__TALLER_4_PUNTO_TRES
+		primo()
+FinAlgoritmo
+
+
+SubProceso primo()
+	
+	definir i Como Entero;
+	definir j Como Entero;
+	definir prim Como Entero;
+	Dimension num[1000]
+	
+	Para i = 1 Hasta 1000 Con Paso 1 Hacer
+		num[i] = i
+	Fin Para
+	
+	Para i = 1 Hasta 1000 Con Paso 1 Hacer
+		prim = 1
+		Para j = 2 Hasta num[i]-1 Con Paso 1 Hacer
+			Si num[i] MOD j = 0 Entonces
+				prim = 0
+			Fin Si
+			
+		Fin Para
+		Si prim = 1 Entonces
+			Escribir "El num ", num[i], " es primo"
+		Fin Si
+	Fin Para
+FinSubProceso
+

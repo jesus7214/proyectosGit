@@ -1,0 +1,28 @@
+Algoritmo TALLER_CINCO_PUNTO_DTRES__TALLER_4_PUNTO_UNO
+
+	Arreglo()
+FinAlgoritmo
+
+
+SubProceso LeerDatos(n, Vector)
+	Dimension datos[5];
+			Para i<-1 Hasta n Con Paso 1
+				Escribir "Ingrese el dato ",i,":"
+				Leer datos[i]
+			FinPara
+			
+			Para i<-1 Hasta n Con Paso 1
+				Escribir datos[i]
+			FinPara
+FinSubProceso
+
+
+SubProceso Arreglo()
+	definir n Como Entero;
+	Dimension datos[5];
+	Escribir "Ingrese la cantidad de datos "
+	Leer n
+	
+	LeerDatos(n, datos)
+FinSubProceso
+	

@@ -1,0 +1,176 @@
+Algoritmo TALLER_CINCO_PUNTO_DTRES__TALLER_4_PUNTO_CINCO
+	mat();
+	
+	
+FinAlgoritmo
+
+
+
+
+
+
+SubProceso mat()
+	definir i Como Entero;
+	definir j Como Entero;
+	
+	definir ii Como Entero;
+	definir jj Como Entero;
+	
+	definir matriz Como caracter;
+	definir matriz_b Como entero;
+	definir s Como Entero;
+	definir a Como Entero;
+	definir aa Como Entero;
+	definir b Como Entero;
+	definir bb Como entero;
+	Dimension matriz[10,10];
+	Dimension matriz_b[10,10];
+	
+	
+	matriz[1,1] = "1X1"; 
+	matriz[2,1] = "1X2"; 
+	matriz[3,1] = "1X3"; 
+	matriz[4,1] = "1X4"; 
+	matriz[5,1] = "1X5"; 
+	matriz[6,1] = "1X6"; 
+	matriz[7,1] = "1X7"; 
+	matriz[8,1] = "1X8"; 
+	matriz[9,1] = "1X9"; 
+	matriz[10,1] = "1X10"; 
+	
+	
+	matriz[1,2] = "2X1"; 
+	matriz[2,2] = "2X2"; 
+	matriz[3,2] = "2X3"; 
+	matriz[4,2] = "2X4"; 
+	matriz[5,2] = "2X5"; 
+	matriz[6,2] = "2X6"; 
+	matriz[7,2] = "2X7"; 
+	matriz[8,2] = "2X8"; 
+	matriz[9,2] = "2X9"; 
+	matriz[10,2] = "2X10"; 
+	
+	matriz[1,3] = "3X1"; 
+	matriz[2,3] = "3X2"; 
+	matriz[3,3] = "3X3"; 
+	matriz[4,3] = "3X4"; 
+	matriz[5,3] = "3X5"; 
+	matriz[6,3] = "3X6"; 
+	matriz[7,3] = "3X7"; 
+	matriz[8,3] = "3X8"; 
+	matriz[9,3] = "3X9"; 
+	matriz[10,3] ="3X10"; 
+	
+	matriz[1,4] = "4X1"; 
+	matriz[2,4] = "4X2"; 
+	matriz[3,4] = "4X3"; 
+	matriz[4,4] = "4X4"; 
+	matriz[5,4] = "4X5"; 
+	matriz[6,4] = "4X6"; 
+	matriz[7,4] = "4X7"; 
+	matriz[8,4] = "4X8"; 
+	matriz[9,4] = "4X9"; 
+	matriz[10,4] ="4X10"; 
+	
+	matriz[1,5] = "5X1"; 
+	matriz[2,5] = "5X2"; 
+	matriz[3,5] = "5X3"; 
+	matriz[4,5] = "5X4"; 
+	matriz[5,5] = "5X5"; 
+	matriz[6,5] = "5X6"; 
+	matriz[7,5] = "5X7"; 
+	matriz[8,5] = "5X8"; 
+	matriz[9,5] = "5X9"; 
+	matriz[10,5] ="5X10"; 
+	
+	matriz[1,6] = "6X1"; 
+	matriz[2,6] = "6X2"; 
+	matriz[3,6] = "6X3"; 
+	matriz[4,6] = "6X4"; 
+	matriz[5,6] = "6X5"; 
+	matriz[6,6] = "6X6"; 
+	matriz[7,6] = "6X7"; 
+	matriz[8,6] = "6X8"; 
+	matriz[9,6] = "6X9"; 
+	matriz[10,6] ="6X10"; 
+	
+	matriz[1,7] = "7X1"; 
+	matriz[2,7] = "7X2"; 
+	matriz[3,7] = "7X3"; 
+	matriz[4,7] = "7X4"; 
+	matriz[5,7] = "7X5"; 
+	matriz[6,7] = "7X6"; 
+	matriz[7,7] = "7X7"; 
+	matriz[8,7] = "7X8"; 
+	matriz[9,7] = "7X9"; 
+	matriz[10,7] ="7X10"; 
+	
+	matriz[1,8] = "8X1"; 
+	matriz[2,8] = "8X2"; 
+	matriz[3,8] = "8X3"; 
+	matriz[4,8] = "8X4"; 
+	matriz[5,8] = "8X5"; 
+	matriz[6,8] = "8X6"; 
+	matriz[7,8] = "8X7"; 
+	matriz[8,8] = "8X8"; 
+	matriz[9,8] = "8X9"; 
+	matriz[10,8] ="8X10";
+	
+	matriz[1,9] = "9X1"; 
+	matriz[2,9] = "9X2"; 
+	matriz[3,9] = "9X3"; 
+	matriz[4,9] = "9X4"; 
+	matriz[5,9] = "9X5"; 
+	matriz[6,9] = "9X6"; 
+	matriz[7,9] = "9X7"; 
+	matriz[8,9] = "9X8"; 
+	matriz[9,9] = "9X9"; 
+	matriz[10,9] ="9X10";
+	
+	matriz[1,10] = "10X1"; 
+	matriz[2,10] = "10X2"; 
+	matriz[3,10] = "10X3"; 
+	matriz[4,10] = "10X4"; 
+	matriz[5,10] = "10X5"; 
+	matriz[6,10] = "10X6"; 
+	matriz[7,10] = "10X7"; 
+	matriz[8,10] = "10X8"; 
+	matriz[9,10] = "10X9"; 
+	matriz[10,10] ="10X10";
+	
+	Para i=1 Hasta 10 Hacer
+		Para j=1 Hasta 10 Hacer 
+			Escribir matriz[i,j], " " Sin Saltar
+		FinPara
+		Escribir " "
+	FinPara
+	
+	
+	Para ii=1 Hasta 10 Hacer
+		Para jj=1 Hasta 10 Hacer 
+			s=ii*jj
+			matriz_b[ii,jj]=s;
+		FinPara
+		
+	FinPara
+	
+	x= fil();
+	z = col();
+	
+	Escribir "resultado de ", matriz[x,z], " es = ", matriz_b[x,z]
+FinSubProceso
+
+
+SubProceso  x <- fil()
+	Escribir "Digite fila"
+	Leer a;
+	x <- a
+FinSubProceso
+
+
+SubProceso z <- col()
+	Escribir "Digite Col"
+	Leer b;
+	z <- b;
+FinSubProceso
+

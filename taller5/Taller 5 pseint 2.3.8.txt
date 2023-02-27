@@ -1,0 +1,249 @@
+Algoritmo TALLER_CINCO_PUNTO_DOS__TALLER_3_PUNTO_OCHO
+notasF()
+		
+FinAlgoritmo
+
+SubProceso a <- opc()
+	Escribir " Digite: 1 para Registro al curso// 2 para Consulta de Notas // 3 para salir del menú"
+	Leer opcEscoger;
+	a<- opcEscoger;
+FinSubProceso
+
+
+SubProceso b <- not()
+	Escribir "Va a Consultar notas Digite el nombre completo para Acceder a sus Notas "
+	Leer opcNotas;
+	b <- opcNotas;
+FinSubProceso
+
+
+SubProceso  nom()
+	Escribir "Digite su Nombre completo"
+	
+FinSubProceso
+
+SubProceso c <- reg()
+	c <- "Va a Registrarse"
+FinSubProceso
+
+SubProceso d <- noApro()
+	d <-	 " No aprobó el Curso"
+FinSubProceso
+
+SubProceso e <- siApro()
+	e <- " Si aprobó el Curso"
+FinSubProceso
+
+
+SubProceso notasF()
+	Definir CupoA Como Caracter;
+	Definir CupoB Como Caracter;
+	Definir CupoC Como Caracter;
+	Definir CupoD Como Caracter;
+	Definir CupoE Como Caracter;
+	Definir CupoF Como Caracter;
+	Definir CupoG Como Caracter;
+	Definir CupoH Como Caracter;
+	
+	Definir estudianteA Como Caracter;
+	Definir estudianteB Como Caracter;
+	Definir estudianteC Como Caracter;
+	Definir estudianteD Como Caracter;
+	Definir estudianteE Como Caracter;
+	Definir estudianteF Como Caracter;
+	Definir estudianteG Como Caracter;
+	Definir estudianteH Como Caracter;
+	
+	Definir nota_estudianteA Como Real;
+	Definir nota_estudianteB Como Real;
+	Definir nota_estudianteC Como Real;
+	Definir nota_estudianteD Como Real;
+	Definir nota_estudianteE Como Real;
+	Definir nota_estudianteF Como Real;
+	Definir nota_estudianteG Como Real;
+	Definir nota_estudianteH Como Real;
+	
+	
+	nota_estudianteA = 2.8;
+	nota_estudianteB = 1.9;
+	nota_estudianteC = 4.8;
+	nota_estudianteD = 3.3;
+	nota_estudianteE = 3.7;
+	nota_estudianteF = 2.3;
+	nota_estudianteG = 4.6;
+	nota_estudianteH = 4.3;
+	
+	
+	Definir cont Como Entero;
+	Definir opcEscoger Como Entero;
+	
+	opcEscoger = 0;
+	Mientras opcEscoger <> 3 Hacer
+		
+		opcEscoger= opc()
+		
+		Si(opcEscoger == 1)
+			
+			si(estudianteA <> null y estudianteB <> nul)
+				Escribir "No hay cupos, capacidad máx 8 personas"
+				Escribir " "
+			FinSi
+			
+			
+			si(estudianteA == null)
+				
+				c=reg()
+				Escribir c," A"
+				nom();
+				Leer estudianteA;
+			FinSi
+			
+			
+			si(estudianteB == null)
+				Escribir c, " B"
+				nom();
+				Leer estudianteB;
+			FinSI
+			
+			
+			si(estudianteC == null)
+				Escribir c, " C"
+				nom();
+				Leer estudianteC;
+			FinSI
+			
+			
+			si(estudianteD == null)
+				Escribir c, " D"
+				nom();
+				Leer estudianteD;
+			FinSi
+			
+			
+			si(estudianteE == null)
+				Escribir c, " E"
+				nom();
+				Leer estudianteE;
+			FinSI
+			
+			
+			si(estudianteF== null)
+				Escribir c, " F"
+				nom();
+				Leer estudianteF;
+			FinSI
+			
+			si(estudianteG== null)
+				Escribir c, " G"
+				nom();
+				Leer estudianteG;
+			FinSI
+			
+			si(estudianteH == null)
+				Escribir c, " H"
+				nom();
+				Leer estudianteH;
+			FinSI
+			
+		FinSi
+		
+		
+		
+		SI(opcEscoger == 2)
+			
+			opcNotas= not();
+			si(opcNotas == estudianteA)
+				Escribir "La Nota final es: ", nota_estudianteA
+				
+				si(nota_estudianteA < 3)
+					
+					Escribir "estudianteA ", noApro();
+				SiNo
+					Escribir estudianteA,	siApro()
+				FinSi
+			FinSi
+			
+			
+			si(opcNotas == estudianteB)
+				Escribir "La Nota final es: ", nota_estudianteB
+				
+				si(nota_estudianteB < 3)
+					
+					Escribir estudianteB, noApro();
+				SiNo
+					Escribir estudianteB, siApro()
+				FinSi
+			FinSi
+			
+			
+			si(opcNotas == estudianteC)
+				Escribir "La Nota final es: ", nota_estudianteC
+				
+				si(nota_estudianteC < 3)
+					Escribir estudianteC, noApro()
+				SiNo
+					Escribir estudianteC, siApro()
+				FinSi
+			FinSi
+			
+			
+			si(opcNotas == estudianteD)
+				Escribir "La Nota final es: ", nota_estudianteD
+				
+				si(nota_estudianteD < 3)
+					Escribir estudianteD, noApro()
+				SiNo
+					Escribir estudianteD, siApro()
+				FinSi
+			FinSi
+			
+			
+			si(opcNotas == estudianteE)
+				Escribir "La Nota final es: ", nota_estudianteE
+				
+				si(nota_estudianteE < 3)
+					Escribir estudianteE, noApro()
+				SiNo
+					Escribir estudianteE, siApro()
+				FinSi
+			FinSi
+			
+			
+			si(opcNotas == estudianteF)
+				Escribir "La Nota final es: ", nota_estudianteF
+				
+				si(nota_estudianteF < 3)
+					Escribir estudianteF,  noApro()
+				SiNo
+					Escribir estudianteF, siApro()
+				FinSi
+			FinSi
+			
+			
+			si(opcNotas == estudianteG)
+				Escribir "La Nota final es: ", nota_estudianteG
+				
+				si(nota_estudianteG < 3)
+					Escribir estudianteG, noApro()
+				SiNo
+					Escribir estudianteG, siApro()
+				FinSi
+			FinSi
+			
+			
+			si(opcNotas == estudianteH)
+				Escribir "La Nota final es: ", nota_estudianteH
+				
+				si(nota_estudianteH < 3)
+					Escribir estudianteH, noApro()
+				SiNo
+					Escribir estudianteH, siApro()
+				FinSi
+			FinSi
+		FinSi
+		
+	FinMientras
+	
+	Escribir "Has salido del menú"
+FinSubProceso
+	

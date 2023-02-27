@@ -1,0 +1,252 @@
+Algoritmo TALLER_CINCO_PUNTO_UNO__TALLER_2_PUNTO_OCHO
+
+	tortas()
+	
+FinAlgoritmo
+
+
+
+SubProceso a <- tort()
+	Escribir "Ddigite el tipo de torta: dulce, fria";
+	leer tipoTorta;
+	a <-tipoTorta;
+FinSubProceso
+
+SubProceso b<- sab()
+	Escribir "Digite el sabor para la tora dulce: mora, arequipe";
+	leer saborTorta;
+	b<-saborTorta
+FinSubProceso
+
+SubProceso  c <-deco()
+	Escribir "Selecciona tipo de Decoración, Digite: cumpleaños, grado o boda";
+	leer decor_Torta
+	c <- decor_Torta
+FinSubProceso
+
+SubProceso tortas()
+	Definir tipoTorta Como Caracter;
+	Definir saborTorta Como Caracter;
+	Definir saborTortaF Como Caracter;
+	Definir porcionTorta Como entero;
+	Definir cant_Torta_Mora como entero;
+	Definir cant_Torta_Arequipe como entero;
+	Definir cant_Torta_Uva como entero;
+	Definir cant_Torta_Chocolate como entero;
+	Definir consulta_Torta_Disponi Como Caracter;
+	Definir decor_Torta Como Caracter;
+	Definir vent_Torta_Mora como entero;
+	Definir vent_Torta_Arequipe como entero;
+	Definir vent_Torta_Uva como entero;
+	Definir vent_Torta_Chocolate como entero;
+	Definir suma_Total como entero;
+	
+	cant_Torta_Mora <- 40;
+	cant_Torta_Arequipe <- 50;
+	cant_Torta_Uva <- 45;
+	cant_Torta_Chocolate <- 18;
+	
+	
+	
+	aa=tort()
+	Si(aa == "dulce")=Verdadero Entonces
+		
+		
+		
+		bb=sab()
+		si(bb == "mora")=Verdadero Entonces
+			Escribir "llevarás torta dulce de Mora";
+			
+			Escribir "Consultar Tortas Disponibles de Mora digite: si para consultar y comprar";
+			leer consulta_Torta_Disponi;
+			
+			si(consulta_Torta_Disponi == "si")=Verdadero Entonces
+				Escribir "La cantida de Tortas dulces Disponibles de Mora son: ",cant_Torta_Mora;
+				Escribir "Cuántas Tortas de Mora va a comprar?"
+				leer vent_Torta_Mora;
+			FinSi
+			
+			
+			cc= deco()
+			si(cc == "cumpleaños")=Verdadero Entonces
+				Escribir "Elegiste Torta para Cumpleaños";
+			FinSi
+			
+			si(cc== "grado")=Verdadero Entonces
+				Escribir "Elegiste Torta para Grado";
+			FinSi
+			
+			si(cc == "boda")=Verdadero Entonces
+				Escribir "Elegiste Torta para Boda";
+			FinSi
+			
+			Escribir "Digite el numero de porciones deseadas: 10, 15, 20";
+			leer porcionTorta;
+			
+			si(porcionTorta == 10)=Verdadero Entonces
+				Escribir "llevarás torta dulce de Mora de 10 porciones";
+			finsi
+			
+			si(porcionTorta == 15)=Verdadero Entonces
+				Escribir "llevarás torta dulce de Mora de 15 porciones";
+			finsi
+			
+			si(porcionTorta == 20)=Verdadero Entonces
+				Escribir "llevarás torta dulce de Mora de 20 porciones";
+			finsi
+		FinSi
+		
+		
+		Si(bb == "arequipe")=Verdadero Entonces
+			Escribir "llevarás torta de Arequipe";
+			
+			Escribir "Consultar Tortas Disponibles de Arequipe digite: si para consultar y comprar";
+			leer consulta_Torta_Disponi;
+			
+			si(consulta_Torta_Disponi == "si")=Verdadero Entonces
+				Escribir "La cantida de Tortas dulces Disponibles de Arequipe son: ",cant_Torta_Arequipe;
+				Escribir "Cuántas Tortas de Arequipe va a comprar?"
+				leer vent_Torta_Arequipe;
+			FinSi
+			
+			
+			cc= deco()
+			si(cc == "cumpleaños")=Verdadero Entonces
+				Escribir "Elegiste Torta para Cumpleaños";
+			FinSi
+			
+			si(cc == "grado")=Verdadero Entonces
+				Escribir "Elegiste Torta para Grado";
+			FinSi
+			
+			si(cc == "boda")=Verdadero Entonces
+				Escribir "Elegiste Torta para Boda";
+			FinSi
+			
+			Escribir "Digite el numero de porciones deseadas: 10, 15, 20";
+			leer porcionTorta;
+			
+			si(porcionTorta == 10)=Verdadero Entonces
+				Escribir "llevarás torta dulce de Arequipe de 10 porciones";
+			finsi
+			
+			si(porcionTorta == 15)=Verdadero Entonces
+				Escribir "llevarás torta dulce de Arequipe de 15 porciones";
+			finsi
+			
+			si(porcionTorta == 20)=Verdadero Entonces
+				Escribir "llevarás torta dulce de Arequipe de 20 porciones";
+			finsi
+		FinSi
+		
+		
+		
+	FinSi
+	
+	
+	
+	
+	
+	
+	
+	Si(aa == "fria")=Verdadero Entonces
+		
+		Escribir "Digite el sabor para la torta fria: uva, chocolate";
+		leer saborTortaF;
+		si(saborTortaF == "uva")=Verdadero Entonces
+			Escribir "llevarás torta fria de Uva";
+			
+			Escribir "Consultar Tortas Disponibles de Uva digite: si para consultar y comprar";
+			leer consulta_Torta_Disponi;
+			
+			si(consulta_Torta_Disponi == "si")=Verdadero Entonces
+				Escribir "La cantida de Tortas frias Disponibles de Uva son: ",cant_Torta_Uva;
+				Escribir "Cuántas Tortas de Uva va a comprar?"
+				leer vent_Torta_Uva;
+			FinSi
+			
+			cc= deco()
+			
+			si(cc == "cumpleaños")=Verdadero Entonces
+				Escribir "Elegiste Torta para Cumpleaños";
+			FinSi
+			
+			si(cc == "grado")=Verdadero Entonces
+				Escribir "Elegiste Torta para Grado";
+			FinSi
+			
+			si(cc== "boda")=Verdadero Entonces
+				Escribir "Elegiste Torta para Boda";
+			FinSi
+			
+			Escribir "Digite el numero de porciones deseadas: 11, 16, 21";
+			leer porcionTorta;
+			
+			si(porcionTorta == 11)=Verdadero Entonces
+				Escribir "llevarás torta fria de Uva de 11 porciones";
+			finsi
+			
+			si(porcionTorta == 16)=Verdadero Entonces
+				Escribir "llevarás torta fria de Uva de 16 porciones";
+			finsi
+			
+			si(porcionTorta == 21)=Verdadero Entonces
+				Escribir "llevarás torta fria de Uva de 21 porciones";
+			finsi
+		FinSi
+		
+		
+		Si(bb == "chocolate")=Verdadero Entonces
+			Escribir "llevarás torta de Chocolate";
+			
+			Escribir "Consultar Tortas Disponibles de Chocolate digite: si para consultar y comprar";
+			leer consulta_Torta_Disponi;
+			
+			si(consulta_Torta_Disponi == "si")=Verdadero Entonces
+				Escribir "La cantida de Tortas Disponibles de Chocolate son: ",cant_Torta_Chocolate;
+				Escribir "Cuántas Tortas de Chocolate va a comprar?"
+				leer vent_Torta_Chocolate;
+			FinSi
+			
+			cc= deco()
+			
+			si(cc == "cumpleaños")=Verdadero Entonces
+				Escribir "Elegiste Torta para Cumpleaños";
+			FinSi
+			
+			si(cc == "grado")=Verdadero Entonces
+				Escribir "Elegiste Torta para Grado";
+			FinSi
+			
+			si(cc == "boda")=Verdadero Entonces
+				Escribir "Elegiste Torta para Boda";
+			FinSi
+			
+			Escribir "Digite el numero de porciones deseadas: 11, 16, 21";
+			leer porcionTorta;
+			
+			si(porcionTorta == 11)=Verdadero Entonces
+				Escribir "llevarás torta fria de Chocolate de 11 porciones";
+			finsi
+			
+			si(porcionTorta == 16)=Verdadero Entonces
+				Escribir "llevarás torta fria de Chocolate de 16 porciones";
+			finsi
+			
+			si(porcionTorta == 21)=Verdadero Entonces
+				Escribir "llevarás torta fria de Chocolate de 21 porciones";
+			finsi
+		FinSi
+		
+		
+		
+	FinSi
+	
+	Escribir "el número de ventas de tortas de Mora es: ",vent_Torta_Mora;
+	Escribir "el número de ventas de tortas de Areuipe: ", vent_Torta_Arequipe;
+	Escribir "el número de ventas de tortas de Uva: ", vent_Torta_Uva;
+	Escribir "el número de ventas de tortas de Chocolate ",vent_Torta_Chocolate;
+	
+	Escribir "El numero Total de tortas vendidas fueron: ", "Tortas de Mora = ", vent_Torta_Mora, " /// Tortas de Arequipe = ", vent_Torta_Arequipe, " /// Tortas de Uva = ", vent_Torta_Uva, " /// Tortas de Chocolate = ", vent_Torta_Chocolate;
+	Escribir "Para una sumatoria Total de: ",  vent_Torta_Mora + vent_Torta_Uva + vent_Torta_Arequipe + vent_Torta_Chocolate, " Tortas vendidas" ;
+FinSubProceso

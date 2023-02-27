@@ -1,0 +1,46 @@
+Algoritmo TALLER_CINCO_PUNTO_DTRES__TALLER_4_PUNTO_DOS
+	numerosAlea();
+
+FinAlgoritmo
+
+
+
+SubProceso a <- numP()
+	a<- "Es numero par "
+FinSubProceso
+
+SubProceso b <- numIm()
+	b<- "Es numero Impar "
+FinSubProceso
+
+SubProceso numerosAlea()
+	Dimension datos[100]
+	definir num Como Entero;
+	definir j Como Entero;
+	definir numer Como Entero;
+	definir a Como Entero;
+	
+	
+	x = 100;
+	
+	Para i<-1 Hasta x Hacer
+		datos[i] =Aleatorio(1,100) 
+	FinPara
+	
+	
+	j=1;
+	num =0;
+	Mientras num <> x Hacer
+		
+		si(datos[j] % 2 == 0)
+			Escribir numP(), datos[j];
+			
+		SiNo
+			Escribir  numIm(), datos[j];
+		FinSi
+		
+		j = j+1;
+		num=num+1;
+	FinMientras	
+FinSubProceso
+	

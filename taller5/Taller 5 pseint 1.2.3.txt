@@ -1,0 +1,22 @@
+SubProceso nom()
+	Escribir "por favor, escriba su nombre";
+	leer nombre;
+
+	Escribir "por favor, escriba su apellido";
+	leer apellido;
+
+	Escribir "Cuál es su edad? ";
+	leer edad;
+	
+	Si edad >= 18 = Verdadero Entonces
+		Escribir nombre, " ",apellido,  " usted es mayor de edad, por lo tanto puede entrar a la fiesta";
+	SiNo
+		Escribir  nombre, " ",apellido, " usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa";
+	FinSi
+finSubProceso
+
+
+Algoritmo TALLER_CINCO_PUNTO_UNO__TALLER_2_PUNTO_TRES
+	
+nom();
+FinAlgoritmo

@@ -1,0 +1,66 @@
+
+SubProceso peliculas()
+	Definir nombreUsuario Como Caracter;
+	Definir respuesta Como Caracter;
+	
+	Escribir "por favor, escriba su nombre";
+	leer nombre;
+	
+	Escribir "Desea alquilar una pelicula?"
+	leer respuesta ;
+	Si (respuesta=="si")= Verdadero Entonces
+		
+		nombre_pelic();
+		respRecibo()
+		respDaño();
+	SiNo
+		Escribir "No alquilaste nada, adios"
+	FinSi
+	
+finSubProceso
+
+
+SubProceso nombre_pelic()
+	nombrePeliculaDisp_A <- "avatar";
+	nombrePeliculaDisp_B <- "Matrix";
+	Definir respuestaDispo Como Caracter;
+	
+	Escribir "Desea ver las peliculas disponibles?"
+	leer respuestaDispo ;
+	Si (respuestaDispo=="si")= Verdadero Entonces
+		Escribir "Las películas disponibles en el momento son; ",nombrePeliculaDisp_A, " y ", nombrePeliculaDisp_B ;
+	FinSi
+FinSubProceso
+
+
+
+SubProceso respRecibo()
+	Definir respuestaDaños Como Caracter;	
+	Definir respuestaRecibir Como Caracter;
+	
+	Escribir "Desea recibir película en la video tienda? ";
+	leer respuestaRecibir ;
+	Si(respuestaRecibir=="si")= Verdadero Entonces
+		Escribir "recibirás la película en la video tienda";
+	SiNo
+		Escribir "la recibirás por otro medio distinto";
+	FinSi
+FinSubProceso
+
+
+SubProceso respDaño()
+	Definir respuestaDaños Como Caracter;	
+	Escribir "Desea realizar anotaciones sobre estas si se llegan a presentar daños u otra novedad sobre la película?";
+	leer respuestaDaños ;
+	si(respuestaDaños=="si")= Verdadero Entonces;
+		Escribir "SI Podrás hacer comentarios obre el estado físico de las peliculas";
+	SiNo
+		Escribir "No podrás hacer comentarios sobre el estado de las películas";
+	FinSi
+FinSubProceso
+
+
+Algoritmo TALLER_CINCO_PUNTO_UNO__TALLER_2_PUNTO_CUATRO
+	peliculas()
+FinAlgoritmo
+

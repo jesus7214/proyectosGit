@@ -1,0 +1,22 @@
+
+
+SubProceso calcular (a)
+	
+	si(a < 18)
+		Escribir" Usted es menor de edad"
+	SiNo
+		Escribir" Usted es mayor de edad"
+	finsi
+finSubProceso
+
+
+
+Algoritmo TALLER_CINCO_PUNTO_UNO__TALLER_2_PUNTO_UNO
+	
+	definir edad Como Entero;
+	
+	Escribir "Digite su edad"
+	leer edad;
+	calcular(edad)
+	
+FinAlgoritmo

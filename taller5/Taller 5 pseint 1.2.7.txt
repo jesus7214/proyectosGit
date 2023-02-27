@@ -1,0 +1,43 @@
+Algoritmo TALLER_CINCO_PUNTO_UNO__TALLER_2_PUNTO_SIETE
+	
+pesos();
+
+FinAlgoritmo
+
+
+SubProceso calc(i)
+	
+	si(i < 18.5)=Verdadero Entonces
+		Escribir "Su Peso es Bajo"
+	FinSi
+
+	si(i > 18.5 y i < 24.9)=Verdadero Entonces
+		Escribir "Su Peso es Normal"
+	FinSi
+	
+	si(i > 25 y i < 29.9)=Verdadero Entonces
+		Escribir "Tiene Sobrepeso"
+	FinSi
+	
+	si(i >= 30)=Verdadero Entonces
+		Escribir "Tiene Obesidad"
+	FinSi
+	
+FinSubProceso
+
+
+SubProceso pesos()
+	Definir peso_kg Como Real;
+	Definir estatura_mt Como Real;
+	Definir imc Como Real;
+	
+	
+	Escribir "Ingrese su Peso en kg";
+	Leer peso_kg;
+	Escribir "ingrese su Estatura en metros" ;
+	Leer estatura_mt;
+	
+	imc = peso_kg / (estatura_mt * estatura_mt);
+	calc(imc);
+	FinSubProceso
+	

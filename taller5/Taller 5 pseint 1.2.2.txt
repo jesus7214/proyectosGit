@@ -1,0 +1,20 @@
+
+
+SubProceso calc ()
+	definir edad Como Entero;
+	
+	Escribir "Digite su edad"
+	leer edad;
+	si(edad < 18)
+		Escribir "Usted aún es un niño(a)";
+
+	finsi
+finSubProceso
+
+
+
+Algoritmo TALLER_CINCO_PUNTO_UNO__TALLER_2_PUNTO_DOS
+	
+	calc()
+	
+FinAlgoritmo
