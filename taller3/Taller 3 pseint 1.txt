@@ -1,0 +1,17 @@
+Algoritmo TALLER_TRES_UNO
+	
+	Definir control_A Como Entero;
+	Definir  control_B Como Entero;
+	
+	
+	Para control_A = 1 Hasta 10 Con Paso 1 Hacer
+		
+		para control_B = 1 hasta control_A Con Paso 1 Hacer
+			escribir "*" Sin Saltar
+		fin para
+		escribir ""
+		
+	FinPara
+	
+	
+FinAlgoritmo

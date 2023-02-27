@@ -1,0 +1,33 @@
+Algoritmo TALLER_TRES_CINCO
+	
+	Definir numA Como Entero;
+	Definir numB Como Entero;
+	Definir nombre Como Caracter;
+	
+	numA =0;
+	
+	Mientras numA <> 3 Hacer
+		Escribir "Digite: 1 para escribir su nombre // 2 para saludar // 3 para salir";
+		leer numB;
+		
+		Si(numB == 3)=Verdadero entonces
+			numA = 3;
+		finsi
+		
+		si(numB == 1)=Verdadero entonces
+			leer nombre;
+		finsi
+		
+		si(numB == 2)=Verdadero entonces
+			Escribir "Buenos días ", nombre;
+		finsi
+		
+	FinMientras
+	
+	Escribir "Ha salido de ciclo"
+	
+	
+	
+	
+	
+FinAlgoritmo
