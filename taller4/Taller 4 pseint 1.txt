@@ -1,0 +1,21 @@
+Algoritmo TALLER_CUATRO_UNO
+	
+	Dimension datos[5];
+	definir i Como Entero;
+
+	
+	Escribir "Ingrese la cantidad de datos "
+	Leer n
+	
+	Para i<-1 Hasta n Con Paso 1
+		Escribir "Ingrese el dato ",i,":"
+		Leer datos[i]
+	FinPara
+	
+	Para i<-1 Hasta n Con Paso 1
+		Escribir datos[i]
+	FinPara
+
+
+	
+FinAlgoritmo

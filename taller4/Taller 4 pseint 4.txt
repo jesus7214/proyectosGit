@@ -1,0 +1,88 @@
+Algoritmo TALLER_CUATRO_CUATRO
+	
+	
+	definir i Como Entero;
+	definir j Como Entero;
+	definir matriz Como Entero;
+	definir s Como Entero;
+	
+	definir a Como Entero;
+	definir b Como Entero;
+	definir bb Como Entero;
+	definir ss Como Entero;
+	
+	Dimension matriz[4,5];
+	
+	
+	Para i=1 hasta 4 Hacer
+		Para j=1 Hasta 5
+			s=s+1
+			matriz[i,j] = s
+			
+		FinPara
+	FinPara
+	
+	
+	Para i=1 hasta 4 Hacer
+		Para j=1 Hasta 5
+			Escribir matriz[i,j], " " Sin Saltar
+		FinPara
+		Escribir "";
+	FinPara
+	
+	Escribir " "
+	Escribir "Utilizando el conocimiento adquirido, a excepción de hacerlo de forma manual, imprima la siguiente matriz bidimensional" 
+	Escribir " "
+
+	
+	a=11
+	b=10;
+	bb=21;
+	Para i=1 hasta 4 Hacer
+		si(i==1)
+			Para j=1 Hasta 5
+				ss=ss+1
+				matriz[i,j] = ss
+				
+			FinPara
+		FinSi
+		
+		si(i==2)
+			Para j=1 Hasta 5
+				a=a-1
+				matriz[i,j] = a
+			FinPara
+		FinSi
+		
+		si(i==3)
+			Para j=1 Hasta 5
+				b=b+1;
+				matriz[i,j] = b
+			FinPara
+		FinSi
+		
+		si(i==4)
+			Para j=1 Hasta 5
+				bb=bb-1;
+				
+				matriz[i,j] = bb
+			FinPara
+		FinSi
+	FinPara
+	
+	Para i=1 hasta 4 Hacer
+		Para j=1 Hasta 5
+			Escribir matriz[i,j], " " Sin Saltar
+		FinPara
+		Escribir "";
+	FinPara
+	
+	
+	
+	
+	
+	
+	
+	
+	
+FinAlgoritmo
