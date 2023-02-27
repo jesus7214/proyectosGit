@@ -1,0 +1,24 @@
+Algoritmo TALLER_UNO_PUNTO_CINCO
+
+	Definir nombreMascota Como Caracter;
+	Definir edadMascota Como entero;
+	Definir tipoMascota Como Caracter;
+	Definir nombrePropietario Como Caracter;
+	Definir apellidoPropietario Como Caracter;
+	
+	Escribir "por favor, escriba nombre de la mascota";
+	leer nombreMascota;
+	Escribir "por favor, escriba edad de la mascota";
+	leer edadMascota;
+	Escribir "por favor, escriba tipo de la mascota";
+	leer tipoMascota;
+	
+	Escribir "por favor, escriba el nombre del propietario";
+	leer nombrePropietario;
+	Escribir "por favor, escriba el apellido del propietario";
+	leer apellidoPropietario;
+	
+	Escribir nombreMascota, " es un ", tipoMascota,  " el cual, tiene ", edadMascota, " años de edad y ", nombrePropietario, " ", apellidoPropietario, " es actualmente su dueño."
+	
+	
+FinAlgoritmo
